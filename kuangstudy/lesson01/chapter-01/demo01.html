@@ -12,14 +12,36 @@
 
     <!-- view层 -->
     <div id="app">
-
         <h3>{{ message }}</h3>
+    </div>    
 
-        <span v-bind:title="message">
+    <div id="app2">
+        <span v-bind:title="message1">
             鼠标悬停查看信息
         </span>
+    </div>
 
-    </div>    
+    <div id="app3">
+        <p v-if="seen">现在你看到我了</p>
+    </div>
+
+    <div id="app4">
+    <ol>
+        <li v-for="todo in todos">
+        {{ todo.text }}
+        </li>
+    </ol>
+    </div>
+
+    <div id="app5">
+        <p>{{ message5 }}</p>
+        <button v-on:click="reverseMessage">反转消息</button>
+    </div>
+
+    <div id="app6">
+        <p>{{ message6 }}</p>
+        <input v-model="message6">
+    </div>
 
     <!-- 导入vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
@@ -33,8 +55,58 @@
             data:{
                 message: "Hello Vue",
             }
+        })
+
+        var vm2 = new Vue({
+            // 选项
+            el:"#app2",
+            // model层
+            data:{
+                message1: '页面加载于 ' + new Date().toLocaleString()
+            }
 
         })
+
+        var vm3 = new Vue({
+            // 选项
+            el:"#app3",
+            // model层
+            data:{
+                seen: true
+            }
+
+        })
+
+        var vm4 = new Vue({
+            el: '#app4',
+            data: {
+                todos: [
+                { text: '学习 JavaScript' },
+                { text: '学习 Vue' },
+                { text: '整个牛项目' }
+                ]
+            }
+        })
+
+        var vm5 = new Vue({
+            el: '#app5',
+            data: {
+                message5: 'Hello Vue.js!'
+            },
+            methods: {
+                reverseMessage: function () {
+                this.message5 = this.message5.split('').reverse().join('')
+                }
+            }
+        })
+
+        var vm6 = new Vue({
+            el: '#app6',
+            data: {
+                message6: 'Hello Vue!'
+            }
+        })
+
 
     </script>
 

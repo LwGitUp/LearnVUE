@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>第一个vue程序</title>
+	</head>
+
+	<body>
+
+        <h3>vue-first</h3>
+
+    <!-- view层 -->
+    <div id="app">
+
+        <h3>{{ message }}</h3>
+
+        <span v-bind:title="message">
+            鼠标悬停查看信息
+        </span>
+
+    </div>    
+
+    <!-- 导入vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+
+    <script>
+
+        var vm = new Vue({
+            // 选项
+            el:"#app",
+            // model层
+            data:{
+                message: "Hello Vue",
+            }
+
+        })
+
+    </script>
+
+    </body>
+</html>
+
+
