@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<html lang = "cn">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, init-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" conten = "ie=edge">
+    <title>vue的起步与插值</title>
+
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{msg}}</h2>
+        <h3>22</h3>
+        <h3>{{"hello"}}</h3>
+        <h3>{{ {id:1} }}</h3>
+        <h3>{{ 1>2? '真的': '假的' }}</h3>
+        <h3>{{ txt.split('').reverse().join('') }}</h3>
+    </div>
+
+    <!-- 引包 -->
+    <script src="./vue.js"></script>
+    <script>
+    //  console.log(Vue);
+
+    //初始化
+    const vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'hello vue',
+            txt: "hello"
+        }
+    })
+
+    </script>
+
+
+</body>
+
+
+
