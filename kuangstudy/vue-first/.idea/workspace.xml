@@ -7,7 +7,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1onWQVCVVUBmouazC2ZMdKZTEf6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,6 +49,7 @@
       <workItem from="1613922820031" duration="975000" />
       <workItem from="1613997938469" duration="108000" />
       <workItem from="1613998308519" duration="277000" />
+      <workItem from="1614089685376" duration="101000" />
     </task>
     <servers />
   </component>
@@ -60,5 +65,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="5" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1613998543925" />
+    <state x="57" y="59" key="new project wizard" timestamp="1614089781216">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="57" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1614089781216" />
   </component>
 </project>
